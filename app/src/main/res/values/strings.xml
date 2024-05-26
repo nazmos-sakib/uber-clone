@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">uber-clone</string>
+
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">6CcAZd9lSlaECGCoL37NiKoY2sEIOo7tjXjYdG23</string>
+    <string name="back4app_client_key">mL8fR6ThH4Y1KYxVnrb1zvi7l2tZ2qnRWURcqRWZ</string>
+    <string name="title_activity_riders">RidersActivity</string>
+    <string name="get_an_uber">Get An Uber</string>
+    <string name="cancel_uber">Cancel Uber</string>
+    <string name="log_out">Log out</string>
+    <string name="title_activity_driver_location">DriverLocationActivity</string>
+    <string name="accept_request">Accept Request</string>
+    <string name="info">info</string>
+    <string name="your_driver_is_on_the_way">Your driver is on the way</string>
+    <string name="kilometer_way">" kilometer way"</string>
+    <string name="your_driver_is">"Your driver is "</string>
+    <string name="your_driver_is_here">Your Driver is here</string>
+</resources>
