@@ -17,4 +17,5 @@
     <string name="kilometer_way">" kilometer way"</string>
     <string name="your_driver_is">"Your driver is "</string>
     <string name="your_driver_is_here">Your Driver is here</string>
+    <string name="getCurrentLocation">Get current Location</string>
 </resources>

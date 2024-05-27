@@ -82,10 +82,12 @@ public class RidersActivity extends FragmentActivity implements OnMapReadyCallba
                 //create a parse object that will take user location
                 Location lastKnownLocation = getLocation();
                 if (lastKnownLocation != null){
+                    //ParseUser.getCurrentUser().put("location",new );
                     requestARide(lastKnownLocation,
                             nullArg->{
                             binding.btnCallAnUberRiderActivity.setText(getString(R.string.cancel_uber));
                             isUberRequestActive = true;
+                            fetchDriverLocationContinuously();
                     });
                 } else {
                     Toast.makeText(this,"Couldnt find location. Please try again later",Toast.LENGTH_SHORT).show();
@@ -106,8 +108,14 @@ public class RidersActivity extends FragmentActivity implements OnMapReadyCallba
 
         //log out button click
         binding.btnLogOutRiderActivity.setOnClickListener(View->{
+            driverLocationTimer = null;
             ParseUser.logOut();
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        });
+
+        //fab current location
+        binding.fabCurrentLocationRidersActivity.setOnClickListener(View->{
+            updateMap(getLocation());
         });
     }
 
@@ -145,11 +153,12 @@ public class RidersActivity extends FragmentActivity implements OnMapReadyCallba
             Log.d("TAG", "updateMap: "+location.toString());
             LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
             mMap.clear();
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation,9));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation,13));
             mMap.addMarker(new MarkerOptions().position(userLocation).title("Your location"));
         }
 
     }
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -177,6 +186,7 @@ public class RidersActivity extends FragmentActivity implements OnMapReadyCallba
             if (lastKnownLocation!=null){
                 return lastKnownLocation;
             } else {
+                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
                 lastKnownLocation = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
                 if (lastKnownLocation!=null){
                      return lastKnownLocation;
