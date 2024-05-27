@@ -56,6 +56,25 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_callAnUber_riderActivity"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_CurrentLocation_ridersActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/getCurrentLocation"
+        android:src="@drawable/baseline_my_location_24"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_callAnUber_riderActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="40dp"
+        app:tint="#2A9B63" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
