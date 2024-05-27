@@ -22,10 +22,15 @@ So Uber is a pretty straightforward idea. A rider taps on the app when they want
 ***
 
 # Screenshots 
-| <img src="app/src/main/res/raw/ss_4_user_make_a_reques.jpeg">   | <img src="app/src/main/res/raw/ss_2.jpeg">  | <img src="app/src/main/res/raw/ss_3_driver_seeing_all_available_request.jpeg">  |
-| ---------------------------------------------- | -------------------------------------------- | ------------------------------------------- | 
+<p align="center">
+  <img src="app/src/main/res/raw/ss_4_user_make_a_reques.jpeg" alt="Image 1" width="200" style="margin: 30px;"/>
+  <img src="app/src/main/res/raw/ss_2.jpeg" alt="Image 2" width="200" style="margin: 30px;"/>
+  <img src="app/src/main/res/raw/ss_3_driver_seeing_all_available_request.jpeg" alt="Image 3" width="200" style="margin: 30px;"/>
+  <img src="app/src/main/res/raw/ss_1.jpeg" alt="Image 4" width="200" style="margin: 30px;"/>
+  <img src="app/src/main/res/raw/ss_5_driver_seeing_over_view.jpeg" alt="Image 4" width="200" style="margin: 30px;"/>
+  <img src="app/src/main/res/raw/ss_6_driver_is_coming.jpeg" alt="Image 4" width="200" style="margin: 30px;"/>
+  <img src="app/src/main/res/raw/ss_7_request_not_accepted.jpeg" alt="Image 4" width="200" style="margin: 30px;"/>
+  
+</p>
 
-
-| <img src="app/src/main/res/raw/ss_1.jpeg"> | <img src="app/src/main/res/raw/ss_5_driver_seeing_over_view.jpeg">  | <img src="app/src/main/res/raw/ss_6_driver_is_coming.jpeg">  | <img src="app/src/main/res/raw/ss_7_request_not_accepted.jpeg"> |
-| ---------------------------------------------- | -------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
-
+### 
